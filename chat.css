@@ -1,0 +1,192 @@
+/*        RESET ALL CSS        */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+ u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+textarea{
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;	
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* 		END OF RESET		*/
+/*		Start Useful Classes	*/
+.ib{
+	display:inline-block;	
+}
+.tac{
+	text-align:center;
+	margin:auto;	
+}
+.tdn{
+	text-decoration:none;
+	color:inherit;
+}
+.abs{
+	position:absolute;	
+}
+/*		End Usefull Classes		*/
+#dl_chat_box,
+#dl_chat_box_wrapper,
+#dl_chat_box_background {
+  transition: all 0.3s;
+}
+#dl_chat_box, #dl_chat_box textarea, #dl_chat_box input[type=text], 
+#dl_chat_box input[type=number],#dl_chat_box input[type=url],
+#dl_chat_box input[type=email],#dl_chat_box input[type=tel], textarea{
+	font-size:12px;	
+}
+.dl_chat_box_inner {
+	background:white;
+	padding:1em;
+	padding-left: 0px;
+	width: 40em;
+	height: 20em;
+	margin: auto;
+    box-shadow: 0px 0px 2px rgb(61, 100, 148);
+	overflow: hidden;
+	border-radius: 5px;
+}
+.contacts{
+	float: left;
+    width: 10em;
+	height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.contact{
+    padding: 0.5em 0.5em;
+    margin-right: 0.5em;
+    padding-left: 0.5em;
+    margin-left: 0.5em;
+    border-radius: 5px;
+}
+.contact i{
+	font-size: 0.75em;
+    margin-top: 0.25em;
+	color:green;
+}
+.chat-wrap{
+    float: right;
+    width: 28.85em;
+    height: 100%;
+    padding-left: 1em;
+	position:relative;
+}
+.chat-msg{
+    margin-left: 0.5em;	
+}
+.chat-reply{
+	position:absolute;
+	bottom:0px;
+	width: 29em;
+}
+.chat-reply textarea{
+	height:4em;
+	max-height:4em;
+	min-height:4em;
+	width: 25.5em;
+	min-width: 25.5em;
+	max-width: 25.5em;
+	resize: none;
+	overflow-y:scroll;
+	overflow-x:hidden;
+	padding: 0.25em;
+	border:none;
+}
+.chat-response{
+	margin-bottom:1.5em;
+}
+.chat-responses{
+	height: 16em;
+	overflow-y:scroll;
+	overflow-x:hidden;	
+    padding-right: 0.5em;
+}
+.chat-send{
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    height: 2.25em;
+    width: 2.25em;
+    font-size: 1.5em;
+}
+.name{
+	float:left;	
+}
+.time{
+	float:right;	
+}
+.reply-top{
+	width:100%;	
+    margin-bottom: 0.5em;
+}
+.side-name{
+    position: relative;
+    bottom: 0.15em;	
+}
+.contact:hover{
+	background-color:rgba(215, 220, 255, 0.91);	
+}
+/* Let's get this party started */
+.contacts::-webkit-scrollbar,.chat-responses::-webkit-scrollbar{
+    width: 8px;
+}
+ 
+/* Track */
+.contacts::-webkit-scrollbar-track, .chat-responses::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+ 
+/* Handle */
+.contacts::-webkit-scrollbar-thumb,.chat-responses::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgb(106, 174, 255);
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+.contacts::-webkit-scrollbar-thumb:window-inactive, .chat-responses::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(255,0,0,0.4); 
+}
